@@ -1,0 +1,4 @@
+interface:
+  display_name: "AGENTS.md bootstrap"
+  short_description: "Set up repo with AGENTS.md file"
+  default_prompt: "Use $agents-md to install the AGENTS.md and helper files into this repository."
