@@ -1,13 +1,56 @@
 # skills
-Local Codex skills. This repo currently provides:
+Local AI assistant skills packaged as an [`sx`](https://github.com/sleuth-io/sx) vault.
 
+`sx` is a package manager for AI coding assistants. This repository uses `sx.toml` as the manifest and stores versioned skill assets under `assets/<skill>/<version>/`.
+
+## Available skills
+
+- `agents-md`: bootstrap a repository with the instruction template from `github.com/pmenglund/agents` by creating `AGENTS.md`, `APP.md`, `PLANS.md`, `LANGUAGE.md`, `WORKFLOW.md`, and `plans/`.
+- `gc`: perform a static architecture and code quality review of a Go repository and write findings to `GC.md`.
 - `goth-web-ui`: build a Go net/http web UI using gomponents + htmx + Tailwind (daisyUI), with embedded assets and unit/integration/e2e tests.
+- `spec-extractor`: extract a durable behavior specification and portable conformance assets from an existing codebase.
 
-## Install a skill with `skill-installer`
-Use the `skill-installer` skill to install from this repo. Example using the helper script it wraps:
+## Use this repo with `sx`
+
+Install `sx`:
 
 ```sh
-$skill-installer install from repo pmenglund/skills the skill goth-web-ui
+brew tap sleuth-io/tap
+brew install sx
 ```
 
-If you are using a fork, replace `pmenglund/skills` with your `OWNER/REPO`. Restart Codex to pick up new skills.
+Initialize a profile or project that uses this repo as a Git vault:
+
+```sh
+sx init --type git --repo git@github.com:pmenglund/skills.git
+```
+
+Install all assets available to the current scope:
+
+```sh
+sx install
+```
+
+Install a specific skill:
+
+```sh
+sx install agents-md
+sx install goth-web-ui
+sx install gc
+sx install spec-extractor
+```
+
+If you are using a fork, replace `git@github.com:pmenglund/skills.git` with your fork's Git URL.
+
+## Use `agents-md`
+Use this skill when you want to adopt the `pmenglund/agents` instruction template in a new or existing repository. The skill:
+
+- infers `AGENTS.md` placeholder values from the target repo first
+- asks you to validate inferred values and provide missing ones
+- installs files without overwriting existing files unless explicitly forced
+
+Invoke it in Codex, for example:
+
+```text
+Use agents-md to bootstrap /path/to/target/repo with language go and workflow linear
+```
