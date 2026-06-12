@@ -21,3 +21,10 @@ created_by = "skills/1.5.2"
   type = "skill"
   [assets.source-path]
     path = "./assets/gc/1"
+
+[[assets]]
+  name = "agents-md"
+  version = "1"
+  type = "skill"
+  [assets.source-path]
+    path = "./assets/agents-md/1"
