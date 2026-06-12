@@ -36,3 +36,11 @@ created_by = "skills/1.5.2"
   clients = ["codex"]
   [assets.source-path]
     path = "./assets/qa-reviewer/1"
+
+[[assets]]
+  name = "security-reviewer"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/security-reviewer/1"
