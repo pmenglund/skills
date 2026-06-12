@@ -1,2 +1,9 @@
 schema_version = 1
 created_by = "skills/1.5.2"
+
+[[assets]]
+  name = "spec-extractor"
+  version = "1"
+  type = "skill"
+  [assets.source-path]
+    path = "./assets/spec-extractor/1"
