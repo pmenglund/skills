@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "security-reviewer"
+  version = "1"
+  type = "agent"
+  description = "Review changes for security risks, including auth, authorization, input handling, secret handling, command execution, dependency risk, and unsafe defaults."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "security-reviewer.toml"
