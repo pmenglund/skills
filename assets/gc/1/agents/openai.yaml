@@ -1,0 +1,4 @@
+interface:
+  display_name: "GC Repository Review"
+  short_description: "Write Go architecture findings to GC.md"
+  default_prompt: "Use $gc to review this Go repository and write GC.md."
