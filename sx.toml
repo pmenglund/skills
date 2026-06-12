@@ -28,3 +28,11 @@ created_by = "skills/1.5.2"
   type = "skill"
   [assets.source-path]
     path = "./assets/agents-md/1"
+
+[[assets]]
+  name = "qa-reviewer"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/qa-reviewer/1"
