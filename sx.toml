@@ -14,3 +14,10 @@ created_by = "skills/1.5.2"
   type = "skill"
   [assets.source-path]
     path = "./assets/goth-web-ui/1"
+
+[[assets]]
+  name = "gc"
+  version = "1"
+  type = "skill"
+  [assets.source-path]
+    path = "./assets/gc/1"
