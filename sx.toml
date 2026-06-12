@@ -7,3 +7,10 @@ created_by = "skills/1.5.2"
   type = "skill"
   [assets.source-path]
     path = "./assets/spec-extractor/1"
+
+[[assets]]
+  name = "goth-web-ui"
+  version = "1"
+  type = "skill"
+  [assets.source-path]
+    path = "./assets/goth-web-ui/1"
