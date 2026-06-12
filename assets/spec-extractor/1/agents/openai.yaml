@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec Extractor"
+  short_description: "Extract portable specs and conformance bundles."
+  default_prompt: "Use $spec-extractor to extract a language-neutral behavior specification, preserve canonical public API landmarks, and, when behavior-bearing tests, fixtures, schemas, or goldens exist, emit a portable conformance bundle. Default to deterministic behavioral parity and include exact prompts only when generative-output parity is requested."
