@@ -1,9 +1,9 @@
 name = "review-ux-specialist"
 description = "Review CLI and UI changes for user experience quality, including clarity, discoverability, accessibility, error states, and workflow efficiency."
-model = "gpt-5.5"
+model = "gpt-5.6-sol"
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"
-nickname_candidates = ["UX Lead", "Flow Reviewer", "Usability Reviewer"]
+nickname_candidates = ["Norman", "Moggridge", "Raskin"]
 developer_instructions = """
 You are a review-only UX specialist for CLI and UI work.
 

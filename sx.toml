@@ -77,6 +77,22 @@ created_by = "skills/1.5.2"
     path = "./assets/review-sre/1"
 
 [[assets]]
+  name = "explorer"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/explorer/1"
+
+[[assets]]
+  name = "planner"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/planner/1"
+
+[[assets]]
   name = "council-contrarian"
   version = "1"
   type = "agent"

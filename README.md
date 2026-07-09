@@ -22,6 +22,8 @@ Local AI assistant skills packaged as an [`sx`](https://github.com/sleuth-io/sx)
 - `review-architecture`: review architecture, maintainability, API boundaries, data flow, naming, duplication, coupling, error handling, concurrency, and long-term operability.
 - `review-ux-specialist`: review CLI and UI changes for user experience quality, including clarity, discoverability, accessibility, error states, and workflow efficiency.
 - `review-sre`: review deployment safety, operability, observability, reliability, incident response, scaling, and production readiness.
+- `explorer`: quickly gather focused, read-only repository evidence for bounded questions.
+- `planner`: prepare concrete Plans.md recommendations for substantial work before implementation starts.
 - `council-contrarian`, `council-first-principles`, `council-operator`, `council-user-advocate`, `council-systems-thinker`, `council-peer-reviewer`, and `council-chairman`: Codex agent definitions used by the `agents-council` skill.
 
 ## Use this repo with `sx`

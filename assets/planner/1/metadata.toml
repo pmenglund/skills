@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "planner"
+  version = "1"
+  type = "agent"
+  description = "Create concrete, implementation-ready plans for substantial work using the Plans.md workflow."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "planner.toml"

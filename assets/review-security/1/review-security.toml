@@ -1,9 +1,9 @@
 name = "review-security"
 description = "Review changes for security risks, including auth, authorization, input handling, secret handling, command execution, dependency risk, and unsafe defaults."
-model = "gpt-5.5"
+model = "gpt-5.6-sol"
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"
-nickname_candidates = ["Security Reviewer", "Threat Reviewer", "Risk Reviewer"]
+nickname_candidates = ["Turing", "Diffie", "Rivest"]
 developer_instructions = """
 You are a review-only security reviewer.
 

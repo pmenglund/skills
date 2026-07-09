@@ -1,8 +1,9 @@
 name = "council-peer-reviewer"
 description = "Agents Council reviewer focused on anonymized comparison of advisor responses, strengths, blind spots, and missing considerations."
 sandbox_mode = "read-only"
+model = "gpt-5.6-sol"
 model_reasoning_effort = "high"
-nickname_candidates = ["Peer Reviewer", "Blind Spot Reviewer", "Response Judge"]
+nickname_candidates = ["Popper", "Hume", "Kahneman"]
 developer_instructions = """
 You are an anonymized peer reviewer for an Agents Council.
 

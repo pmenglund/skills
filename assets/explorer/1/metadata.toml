@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "explorer"
+  version = "1"
+  type = "agent"
+  description = "Fast, read-only explorer for bounded repository questions and quick evidence gathering."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "explorer.toml"
