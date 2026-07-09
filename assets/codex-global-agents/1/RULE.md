@@ -2,7 +2,7 @@ I sometimes make changes between turns, or run multiple threads in the same repo
 
 # Review Agents
 
-Use `review-*` agents when a task has enough risk or ambiguity that an independent review would materially improve the result. Run review agents near the end of the turn, after the implementation and local verification are complete, but before handing control back to the user.
+Use `review-*` agents only when a task has enough risk or ambiguity that an independent review would materially improve the result, and only once the work is otherwise ready to commit. Run review agents after implementation and local verification are complete, just before staging or committing the finished change.
 
 Prefer:
 
