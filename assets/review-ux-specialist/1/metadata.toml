@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "review-ux-specialist"
+  version = "1"
+  type = "agent"
+  description = "Review CLI and UI changes for user experience quality, including clarity, discoverability, accessibility, error states, and workflow efficiency."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "review-ux-specialist.toml"

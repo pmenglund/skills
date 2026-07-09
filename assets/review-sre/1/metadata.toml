@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "review-sre"
+  version = "1"
+  type = "agent"
+  description = "Review deployment safety, operability, observability, reliability, incident response, scaling, and production readiness."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "review-sre.toml"

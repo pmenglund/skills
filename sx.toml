@@ -37,20 +37,44 @@ created_by = "skills/1.5.2"
     path = "./assets/agents-md/1"
 
 [[assets]]
-  name = "qa-reviewer"
+  name = "review-qa"
   version = "1"
   type = "agent"
   clients = ["codex"]
   [assets.source-path]
-    path = "./assets/qa-reviewer/1"
+    path = "./assets/review-qa/1"
 
 [[assets]]
-  name = "security-reviewer"
+  name = "review-security"
   version = "1"
   type = "agent"
   clients = ["codex"]
   [assets.source-path]
-    path = "./assets/security-reviewer/1"
+    path = "./assets/review-security/1"
+
+[[assets]]
+  name = "review-architecture"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/review-architecture/1"
+
+[[assets]]
+  name = "review-ux-specialist"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/review-ux-specialist/1"
+
+[[assets]]
+  name = "review-sre"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/review-sre/1"
 
 [[assets]]
   name = "council-contrarian"

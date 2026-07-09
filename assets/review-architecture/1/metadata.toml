@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "review-architecture"
+  version = "1"
+  type = "agent"
+  description = "Review architecture, maintainability, API boundaries, data flow, naming, duplication, coupling, error handling, concurrency, and long-term operability."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "review-architecture.toml"

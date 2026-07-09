@@ -1,11 +1,11 @@
 metadata-version = "1.0"
 
 [asset]
-  name = "qa-reviewer"
+  name = "review-qa"
   version = "1"
   type = "agent"
   description = "Review test coverage, missing edge cases, regression risk, test reliability, fixtures, CI coverage, and acceptance criteria."
   clients = ["codex"]
 
 [agent]
-  prompt-file = "qa-reviewer.toml"
+  prompt-file = "review-qa.toml"

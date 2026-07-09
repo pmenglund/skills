@@ -1,4 +1,4 @@
-name = "security-reviewer"
+name = "review-security"
 description = "Review changes for security risks, including auth, authorization, input handling, secret handling, command execution, dependency risk, and unsafe defaults."
 model = "gpt-5.5"
 model_reasoning_effort = "high"

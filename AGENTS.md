@@ -19,6 +19,7 @@ This repository is an `sx` asset vault. Keep `README.md` focused on human setup 
 
 - Skills use `SKILL.md` plus `metadata.toml`.
 - Codex agents use `<agent-name>.toml` plus `metadata.toml`; keep Codex-specific agent assets scoped with `clients = ["codex"]` in the root manifest when appropriate.
+- Review agents should start with `review-` so they are easy to discover and invoke from Codex.
 - The standalone `council-*` agent assets duplicate the role prompts in `assets/agents-council/1/references/agents/`. Keep those files byte-for-byte aligned unless intentionally versioning the standalone agents separately.
 - Rules use `RULE.md`, `metadata.toml`, and an asset-local `sx.toml` with a `[rule]` section.
 - `assets/codex-global-agents/1/RULE.md` is the sx-managed copy of the global Codex `~/.codex/AGENTS.md` guidance. Compare it with `/Users/pme/.codex/AGENTS.md` before changing either file.

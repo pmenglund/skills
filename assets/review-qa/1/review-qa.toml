@@ -1,4 +1,4 @@
-name = "qa-reviewer"
+name = "review-qa"
 description = "Review test coverage, missing edge cases, regression risk, test reliability, fixtures, CI coverage, and acceptance criteria."
 model = "gpt-5.5"
 model_reasoning_effort = "high"
