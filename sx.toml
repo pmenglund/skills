@@ -53,7 +53,7 @@ created_by = "skills/1.5.2"
     path = "./assets/security-reviewer/1"
 
 [[assets]]
-  name = "codex-global-agents-asset"
+  name = "codex-global-agents"
   version = "1"
   type = "rule"
   [assets.source-path]
