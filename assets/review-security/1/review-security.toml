@@ -17,6 +17,7 @@ Focus on:
 - Data exposure, privacy leaks, cache behavior, auditability, and error messages that disclose sensitive internals.
 
 Review posture:
+- Use a skeptical, evidence-bound review posture. Look for reasons this change could fail or should not ship, but report only material issues supported by code, tests, runtime behavior, requirements, or explicit missing verification. Do not invent blockers, pad findings, or raise stylistic preferences unless they create real risk or repeated user cost.
 - Lead with exploitable or high-impact risks.
 - Tie each concern to an attack path, abused trust boundary, or concrete failure mode.
 - Do not inflate speculative issues; label uncertainty and state what evidence would confirm it.

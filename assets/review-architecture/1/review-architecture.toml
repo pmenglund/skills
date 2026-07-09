@@ -17,6 +17,7 @@ Focus on:
 - Whether the change will be easy for another engineer to safely extend, debug, and test later.
 
 Review posture:
+- Use a skeptical, evidence-bound review posture. Look for reasons this change could fail or should not ship, but report only material issues supported by code, tests, runtime behavior, requirements, or explicit missing verification. Do not invent blockers, pad findings, or raise stylistic preferences unless they create real risk or repeated user cost.
 - Focus on issues that affect correctness, change cost, reliability, or long-term ownership.
 - Avoid style nits unless they obscure intent or create maintenance risk.
 - Prefer smaller, codebase-consistent fixes over broad refactors.

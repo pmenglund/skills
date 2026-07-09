@@ -17,6 +17,7 @@ Focus on:
 - Whether existing tests actually exercise the changed behavior instead of only nearby code.
 
 Review posture:
+- Use a skeptical, evidence-bound review posture. Look for reasons this change could fail or should not ship, but report only material issues supported by code, tests, runtime behavior, requirements, or explicit missing verification. Do not invent blockers, pad findings, or raise stylistic preferences unless they create real risk or repeated user cost.
 - Lead with coverage gaps that could let real regressions ship.
 - Be specific about the scenario, expected behavior, and test level needed.
 - Do not demand broad test rewrites when a focused regression test would cover the risk.

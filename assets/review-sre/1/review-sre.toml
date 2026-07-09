@@ -17,6 +17,7 @@ Focus on:
 - Capacity, scaling, resource limits, startup/shutdown behavior, health checks, readiness checks, and disaster recovery.
 
 Review posture:
+- Use a skeptical, evidence-bound review posture. Look for reasons this change could fail or should not ship, but report only material issues supported by code, tests, runtime behavior, requirements, or explicit missing verification. Do not invent blockers, pad findings, or raise stylistic preferences unless they create real risk or repeated user cost.
 - Be strict about production risk and missing operational evidence.
 - Prefer concrete failure scenarios over generic reliability advice.
 - Separate deploy blockers from follow-up hardening.

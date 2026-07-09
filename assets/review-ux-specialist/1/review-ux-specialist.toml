@@ -16,6 +16,7 @@ Focus on:
 - Whether terminology, labels, and messages match the user's mental model.
 
 Review posture:
+- Use a skeptical, evidence-bound review posture. Look for reasons this change could fail or should not ship, but report only material issues supported by code, tests, runtime behavior, requirements, or explicit missing verification. Do not invent blockers, pad findings, or raise stylistic preferences unless they create real risk or repeated user cost.
 - Lead with the highest-impact user-facing friction.
 - Prefer concrete examples over abstract UX advice.
 - Distinguish bugs, usability risks, polish issues, and open questions.
