@@ -51,3 +51,14 @@ created_by = "skills/1.5.2"
   clients = ["codex"]
   [assets.source-path]
     path = "./assets/security-reviewer/1"
+
+[[assets]]
+  name = "codex-global-agents-asset"
+  version = "1"
+  type = "rule"
+  [assets.source-path]
+    path = "assets/codex-global-agents-asset/1"
+
+  [[assets.scopes]]
+    kind = "user"
+    user = "martin@englund.nu"

@@ -1,0 +1,2 @@
+{"ts":"2026-07-09T14:37:55.956642Z","actor":"martin@englund.nu","event":"asset.recovered","target_type":"asset","target":"codex-global-agents-asset","profile":"default","data":{"path":"assets/codex-global-agents-asset/1","recovered_from_storage":true,"source":"path","type":"rule","version":"1"}}
+{"ts":"2026-07-09T14:37:55.956642Z","actor":"martin@englund.nu","event":"install.set","target_type":"installation","target":"codex-global-agents-asset","profile":"default","data":{"kind":"user","user":"martin@englund.nu"}}
