@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -99,9 +100,60 @@ def markdown(data: dict[str, Any], timestamp: str) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+INLINE_RE = re.compile(r"(`[^`\n]+`)|(\*\*([^*\n]+(?:\*[^*\n]+)*)\*\*)")
+
+
+def inline_markdown(text: str) -> str:
+    parts: list[str] = []
+    position = 0
+    for match in INLINE_RE.finditer(text):
+        parts.append(html.escape(text[position : match.start()]))
+        if match.group(1):
+            code_text = match.group(1)[1:-1]
+            parts.append(f"<code>{html.escape(code_text)}</code>")
+        else:
+            parts.append(f"<strong>{html.escape(match.group(3))}</strong>")
+        position = match.end()
+    parts.append(html.escape(text[position:]))
+    return "".join(parts)
+
+
 def paragraphs(text: str) -> str:
-    escaped = html.escape(text)
-    return escaped.replace("\n", "<br>\n")
+    return "<br>\n".join(inline_markdown(line) for line in text.split("\n"))
+
+
+def markdown_blocks(text: str) -> str:
+    blocks: list[str] = []
+    paragraph_lines: list[str] = []
+
+    def flush_paragraph() -> None:
+        if not paragraph_lines:
+            return
+        blocks.append(f"<p>{paragraphs(chr(10).join(paragraph_lines))}</p>")
+        paragraph_lines.clear()
+
+    for raw_line in text.splitlines():
+        line = raw_line.rstrip()
+        if not line:
+            flush_paragraph()
+            continue
+
+        stripped = line.lstrip()
+        heading_prefix = len(stripped) - len(stripped.lstrip("#"))
+        if (
+            1 <= heading_prefix <= 6
+            and len(stripped) > heading_prefix
+            and stripped[heading_prefix] == " "
+        ):
+            flush_paragraph()
+            heading_text = stripped[heading_prefix + 1 :].strip()
+            blocks.append(f"<h{heading_prefix}>{inline_markdown(heading_text)}</h{heading_prefix}>")
+            continue
+
+        paragraph_lines.append(line)
+
+    flush_paragraph()
+    return "\n".join(blocks)
 
 
 def html_doc(data: dict[str, Any], timestamp: str) -> str:
@@ -182,6 +234,15 @@ def html_doc(data: dict[str, Any], timestamp: str) -> str:
     h1 {{ font-size: 32px; }}
     h2 {{ font-size: 20px; margin-top: 28px; }}
     p {{ margin: 0 0 16px; }}
+    code {{
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", monospace;
+      font-size: 0.95em;
+      background: #f1f1ed;
+      border: 1px solid #dfdfd7;
+      border-radius: 4px;
+      padding: 0 3px;
+    }}
+    .synthesis h2:first-child {{ margin-top: 0; }}
     .meta {{ color: var(--muted); margin-bottom: 24px; }}
     .question {{
       border-left: 4px solid var(--accent);
@@ -237,7 +298,7 @@ def html_doc(data: dict[str, Any], timestamp: str) -> str:
     {next_step_block}
 
     <h2>Chairman Synthesis</h2>
-    <p>{paragraphs(as_text(data.get("chairman_synthesis")))}</p>
+    <section class="synthesis">{markdown_blocks(as_text(data.get("chairman_synthesis")))}</section>
 
     <h2>Advisor Responses</h2>
     {advisor_cards}
