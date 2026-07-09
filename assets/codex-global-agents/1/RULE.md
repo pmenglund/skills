@@ -2,7 +2,7 @@ I sometimes make changes between turns, or run multiple threads in the same repo
 
 # Review Agents
 
-Use `review-*` agents when a task has enough risk or ambiguity that an independent review would materially improve the result.
+Use `review-*` agents when a task has enough risk or ambiguity that an independent review would materially improve the result. Run review agents near the end of the turn, after the implementation and local verification are complete, but before handing control back to the user.
 
 Prefer:
 
@@ -12,7 +12,9 @@ Prefer:
 - `review-ux-specialist` for CLI/UI flows, wording, accessibility, error states, or workflow friction.
 - `review-sre` for deployment safety, observability, rollback, alerts, incidents, scaling, or production readiness.
 
-Do not use review agents for tiny mechanical edits or when they would add delay without reducing risk. When you use one, summarize the findings and say what changed because of the review.
+Do not use review agents for tiny mechanical edits or when they would add delay without reducing risk.
+
+When a review agent finds actionable issues, address them before handing control back to the user. If you intentionally do not address a finding, explain why. In the final response, summarize which review agents ran, what they found, and what changed because of the review.
 
 # Prompting
 
