@@ -39,7 +39,7 @@ Read `references/prompts.md` and the role files in `references/agents/` before s
 
 ## Advisors
 
-Use these five advisors unless the user explicitly asks for a different council. The TOML files are bundled role definitions for review and reuse; they are not active Codex custom agents unless copied to `~/.codex/agents/` or `.codex/agents/`.
+Use these five advisors unless the user explicitly asks for a different council. The TOML files are bundled role definitions for review and reuse. This vault also exposes the same roles as standalone `sx` Codex agent assets named `council-contrarian`, `council-first-principles`, `council-operator`, `council-user-advocate`, `council-systems-thinker`, `council-peer-reviewer`, and `council-chairman`.
 
 - `references/agents/contrarian.toml`
 - `references/agents/first-principles.toml`

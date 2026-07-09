@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "council-user-advocate"
+  version = "1"
+  type = "agent"
+  description = "Agents Council advisor focused on effects on users, customers, readers, collaborators, maintainers, and other affected people."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "council-user-advocate.toml"

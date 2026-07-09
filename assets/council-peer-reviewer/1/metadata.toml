@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "council-peer-reviewer"
+  version = "1"
+  type = "agent"
+  description = "Agents Council reviewer focused on anonymized comparison of advisor responses, strengths, blind spots, and missing considerations."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "council-peer-reviewer.toml"

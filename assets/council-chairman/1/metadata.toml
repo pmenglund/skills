@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "council-chairman"
+  version = "1"
+  type = "agent"
+  description = "Agents Council synthesizer focused on integrating advisor responses, peer reviews, disagreement, blind spots, and a final recommendation."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "council-chairman.toml"

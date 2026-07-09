@@ -11,6 +11,16 @@ Local AI assistant skills packaged as an [`sx`](https://github.com/sleuth-io/sx)
 - `goth-web-ui`: build a Go net/http web UI using gomponents + htmx + Tailwind (daisyUI), with embedded assets and unit/integration/e2e tests.
 - `spec-extractor`: extract a durable behavior specification and portable conformance assets from an existing codebase.
 
+## Available rules
+
+- `codex-global-agents`: global Codex `AGENTS.md` guidance captured as an `sx` rule asset.
+
+## Available agents
+
+- `qa-reviewer`: review test coverage, missing edge cases, regression risk, test reliability, fixtures, CI coverage, and acceptance criteria.
+- `security-reviewer`: review changes for security risks, including auth, authorization, input handling, secret handling, command execution, dependency risk, and unsafe defaults.
+- `council-contrarian`, `council-first-principles`, `council-operator`, `council-user-advocate`, `council-systems-thinker`, `council-peer-reviewer`, and `council-chairman`: Codex agent definitions used by the `agents-council` skill.
+
 ## Use this repo with `sx`
 
 Install `sx`:

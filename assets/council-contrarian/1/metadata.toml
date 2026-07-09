@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "council-contrarian"
+  version = "1"
+  type = "agent"
+  description = "Agents Council advisor focused on failure modes, downside, weak assumptions, and uncomfortable objections."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "council-contrarian.toml"

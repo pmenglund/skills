@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "council-first-principles"
+  version = "1"
+  type = "agent"
+  description = "Agents Council advisor focused on reframing the decision from goals, constraints, incentives, and root causes."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "council-first-principles.toml"

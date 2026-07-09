@@ -53,6 +53,62 @@ created_by = "skills/1.5.2"
     path = "./assets/security-reviewer/1"
 
 [[assets]]
+  name = "council-contrarian"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/council-contrarian/1"
+
+[[assets]]
+  name = "council-first-principles"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/council-first-principles/1"
+
+[[assets]]
+  name = "council-operator"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/council-operator/1"
+
+[[assets]]
+  name = "council-user-advocate"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/council-user-advocate/1"
+
+[[assets]]
+  name = "council-systems-thinker"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/council-systems-thinker/1"
+
+[[assets]]
+  name = "council-peer-reviewer"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/council-peer-reviewer/1"
+
+[[assets]]
+  name = "council-chairman"
+  version = "1"
+  type = "agent"
+  clients = ["codex"]
+  [assets.source-path]
+    path = "./assets/council-chairman/1"
+
+[[assets]]
   name = "codex-global-agents"
   version = "1"
   type = "rule"

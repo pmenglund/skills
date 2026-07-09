@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "council-systems-thinker"
+  version = "1"
+  type = "agent"
+  description = "Agents Council advisor focused on interactions, feedback loops, long-term maintenance, and unintended consequences."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "council-systems-thinker.toml"

@@ -1,0 +1,11 @@
+metadata-version = "1.0"
+
+[asset]
+  name = "council-operator"
+  version = "1"
+  type = "agent"
+  description = "Agents Council advisor focused on execution, sequencing, cost, reversibility, and practical next steps."
+  clients = ["codex"]
+
+[agent]
+  prompt-file = "council-operator.toml"
