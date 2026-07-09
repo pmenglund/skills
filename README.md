@@ -5,6 +5,7 @@ Local AI assistant skills packaged as an [`sx`](https://github.com/sleuth-io/sx)
 
 ## Available skills
 
+- `agents-council`: run important decisions, tradeoffs, plans, proposals, or uncertain judgment calls through a Codex subagent council.
 - `agents-md`: bootstrap a repository with the instruction template from `github.com/pmenglund/agents` by creating `AGENTS.md`, `APP.md`, `PLANS.md`, `LANGUAGE.md`, `WORKFLOW.md`, and `plans/`.
 - `gc`: perform a static architecture and code quality review of a Go repository and write findings to `GC.md`.
 - `goth-web-ui`: build a Go net/http web UI using gomponents + htmx + Tailwind (daisyUI), with embedded assets and unit/integration/e2e tests.
@@ -34,6 +35,7 @@ sx install
 Install a specific skill:
 
 ```sh
+sx install agents-council
 sx install agents-md
 sx install goth-web-ui
 sx install gc

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agents Council"
+  short_description: "Run decisions through Codex advisors"
+  default_prompt: "Use $agents-council to pressure-test this decision and save a report."

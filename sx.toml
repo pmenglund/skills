@@ -2,6 +2,13 @@ schema_version = 1
 created_by = "skills/1.5.2"
 
 [[assets]]
+  name = "agents-council"
+  version = "1"
+  type = "skill"
+  [assets.source-path]
+    path = "./assets/agents-council/1"
+
+[[assets]]
   name = "spec-extractor"
   version = "1"
   type = "skill"
